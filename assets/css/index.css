@@ -15,7 +15,7 @@
     font-style: normal;
 }
 
-.skew{
+.skew {
     content: '';
     display: block;
     width: 80px;
@@ -25,7 +25,7 @@
     border-radius: 12px 0;
 }
 
-.skew::after{
+.skew::after {
     content: '';
     display: block;
     width: 80px;
@@ -35,21 +35,92 @@
     left: 50px;
 }
 
-.text-sideways{
-    writing-mode: vertical-lr!important;
+.text-sideways {
+    writing-mode: vertical-lr !important;
     text-orientation: mixed;
     transform: rotate(180deg);
-    text-transform: capitalize!important;
+    text-transform: capitalize !important;
 }
 
-.profile{
+.profile {
     filter: grayscale(100%) drop-shadow(5px 5px 5px #222);
     transition: all 0.3s ease-in-out;
 
 }
 
+.svg-bg {
+    --c1: #5468ff;
+    /* Base Color */
+    --c2: #7884ff;
+    /* Lighter Tint */
+    --c3: #9ca0ff;
+    /* Light Tint */
+    --c4: #c0bcff;
+    /* Pale Tint */
+    --c5: #e4d8ff;
+    /* Soft Tint */
+    --c6: #4458e5;
+    /* Darker Shade */
+    --c7: #3749cc;
+    /* Deep Shade */
+    --c8: #2b3ab2;
+    /* Dark Shade */
+    --c9: #202d99;
+    /* Muted Shade */
+    --c10: #161f7f;
+    /* Deep Muted Shade */
 
+}
 
+.svg-bg .st5 {
+    fill: #fff
+}
+.svg-bg .st0 {
+    fill: #0a9396;
+    fill: var(--c1)
+}
 
+.svg-bg .st1 {
+    fill: #94d2bd;
+    fill: var(--c2, var(--c1))
+}
 
+.svg-bg .st2 {
+    fill: #ae2112;
+    fill: var(--c3, var(--c2, var(--c1)))
+}
 
+.svg-bg .st3 {
+    fill: #ee9b00;
+    fill: var(--c4, var(--c2, var(--c1)))
+}
+
+.svg-bg .st4 {
+    fill: #9a2226;
+    fill: var(--c5, var(--c3, var(--c1)))
+}
+
+.svg-bg .st6 {
+    fill: #bb3e04;
+    fill: var(--c6, var(--c5, var(--c3, var(--c1))))
+}
+
+.svg-bg .st7 {
+    fill: #015f73;
+    fill: var(--c7, var(--c4, var(--c2, var(--c1))))
+}
+
+.svg-bg .st8 {
+    fill: #bb3e04;
+    fill: var(--c8, var(--c5, var(--c3, var(--c1))))
+}
+
+.svg-bg .st9 {
+    fill: #bb3e04;
+    fill: var(--c9, var(--c7, var(--c5, var(--c3, var(--c1)))))
+}
+
+.svg-bg .st10 {
+    fill: #bb3e04;
+    fill: var(--c10, var(--c8, var(--c6, var(--c4, var(--c2, var(--c1))))))
+}
