@@ -59,8 +59,21 @@
 
     </nav>
     <div class="flex h-[calc(100vh-2.5rem)] w-full">
-        <div class="w-2/5 h-full ">
-            <div class="w-full h-[60px] flex relative justify-between">
+        <div class="w-2/5 h-full relative">
+            <div class="wrapper absolute  w-full h-full overflow-hidden z-10">
+                <div
+                    class="absolute w-[570px] h-[570px] rounded-full border-white border-[2rem] shadow-lg opacity-50 right-0 top-0 -mt-28 -mr-32">
+                </div>
+                <div
+                    class="absolute w-[400px] h-[400px] rounded-full border-white border-[2rem] shadow-lg opacity-10 left-0 bottom-0 -mb-36 -ml-32 z-1">
+                </div>
+                <div
+                    class="absolute w-[200px] h-[200px] rounded-full border-white border-[2rem] shadow-lg opacity-10 right-0 -mt-20 -mr-20 z-1">
+                </div>
+            </div>
+            
+            <div class="w-full h-[60px] flex relative justify-between z-10">
+                
                 <div class="about-me h-full w-2/5 text-lg flex items-center -mt-2">
                     <div class="flex items-center">
 
@@ -73,21 +86,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-3/5 h-[60px] flex self-end">
+
+
+            </div>
+            <div
+                class="w-full bg-primary rounded-3xl rounded-se-none h-[calc(100%-60px)] relative flex flex-col justify-between">
+
+                <div class="w-3/5 h-[60px] flex self-end -mt-[60px]">
                     <div class="skew"></div>
                     <div class="w-full h-[70px] bg-primary rounded-se-3xl rounded-ss-xl after-about"></div>
 
                 </div>
+                
 
-            </div>
-            <div
-                class="w-full bg-primary rounded-3xl rounded-se-none h-[calc(100%-60px)] relative flex flex-col justify-between overflow-hidden">
-                <div
-                    class="absolute w-[600px] h-[600px] rounded-full border-white border-[2rem] shadow-lg opacity-50 right-0 top-0 -mt-32 -mr-36">
-                </div>
-                <div
-                    class="absolute w-[400px] h-[400px] rounded-full border-white border-[2rem] shadow-lg opacity-10 left-0 bottom-0 -mb-36 -ml-32 z-1">
-                </div>
                 <div
                     class="absolute profile-holder h-[300px] w-[300px] rounded-full overflow-hidden flex justify-center items-center right-3 top-4">
                     <div class="absolute w-[200px] h-[200px] bg-white opacity-30 rounded-full shadow-lg"></div>
@@ -123,7 +134,8 @@
                             </div>
                         </div>
                         <div class="right-ico">
-                            <div class="circle w-[50px] h-[50px] bg-white rounded-full cursor-pointer flex items-center justify-center text-primary shadow-lg">
+                            <div
+                                class="circle w-[50px] h-[50px] bg-white rounded-full cursor-pointer flex items-center justify-center text-primary shadow-lg">
                                 <i class="fa-regular fa-arrow-right-to-arc fa-sm"></i>
                             </div>
                         </div>
