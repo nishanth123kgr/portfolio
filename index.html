@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5468ff',
+                        secondary: '#378ce7',
+                        tertiary: '#D3D9FF',
+                        dark_primary: '#3F57FF',
+                        primary_light: '#5468ff1a'
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        unbounded: ['Unbounded', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="w-screen h-screen flex items-center flex-col relative py-10 px-16 font-unbounded">
+    <nav class="fixed w-16 left-0 top-1/2 transform -translate-y-1/4">
+            <div class="flex flex-col justify-between flex-col-reverse">
+                <div class="flex items-center text-sideways mt-16">
+                    About
+                </div>
+                <div class="flex items-center text-sideways mt-16">
+                    Projects
+                </div>
+                <div class="flex items-center text-sideways mt-16">
+                    Skills
+                </div>
+                <div class="flex items-center text-sideways">
+                    Connect
+                </div>
+                
+            </div>
+            
+                
+            
+        </div>
+
+    </nav>
+    <div class="flex h-[calc(100vh-2.5rem)] w-full">
+        <div class="w-2/5 h-full ">
+            <div class="w-full h-[60px] flex relative justify-between">
+                <div class="about-me h-full w-2/5 text-lg flex items-center -mt-2">
+                    <div class="flex items-center">
+
+                        <div
+                            class="prof h-[35px] w-[35px] rounded-full bg-white border border-primary flex items-center justify-center">
+                            <img src="assets/logo/logo-light-white.png" alt="logo" class="h-[20px] w-[20px]">
+                        </div>
+                        <div class="username ml-2">
+                            About Me
+                        </div>
+                    </div>
+                </div>
+                <div class="w-3/5 h-[60px] flex self-end">
+                    <div class="skew"></div>
+                    <div class="w-full h-[70px] bg-primary rounded-se-3xl rounded-ss-xl after-about"></div>
+
+                </div>
+
+            </div>
+            <div class="w-full bg-primary rounded-3xl rounded-se-none h-[calc(100%-60px)] relative flex flex-col justify-between overflow-hidden">
+                <div class="absolute w-[600px] h-[600px] rounded-full border-white border-[2rem] shadow-lg opacity-10 right-0 top-0 -mt-32 -mr-36"></div>
+                <div class="absolute w-[550px] h-[550px] rounded-full border-white border-[2rem] shadow-lg opacity-10 left-0 bottom-0 -mb-32 -ml-20 z-1"></div>
+                <div class="absolute profile-holder h-[300px] w-[300px] rounded-full overflow-hidden flex justify-center items-center right-0">
+                    <div class="absolute w-[200px] h-[200px] bg-secondary rounded-full shadow-lg"></div>
+                    <div class="absolute w-[240px] h-[240px] rounded-full border-white border-8 shadow-lg"></div>
+                    <img src="assets/images/profile.png" alt="" class="profile h-[350px] mt-14" >
+                </div>
+                <div></div>
+                <div class="profile-info text-white p-8">
+                    <div class="text-lg">
+                        Im,
+                    </div>
+                    <div class="font-bold text-[4rem]">
+                        Nishanth
+                    </div>
+                    <div class="font-bold text-xl">
+                        Full Stack Developer
+                    </div>
+                    <div class="mail font-light text-sm mt-2 border-b border-dashed cursor-pointer w-max">nishanth@bluu.in &nbsp;&nbsp;<i class="fa-light fa-envelope"></i></div>
+                    <div class="social mt-4 flex flex-wrap fa-xl">
+                        <div class="github w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="linkedin w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="twitter w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="ml-8 w-3/5 h-full flex flex-col justify-between">
+            <div class="portfolio text-[6rem] tracking-wide -mt-9 -ml-[6px] font-bold">
+                Portfolio
+            </div>
+            <div class="profile-containers w-full h-[calc(100%-144px+1rem)]">
+                <div class="top-containers w-full h-3/6 flex pb-8">
+                    <div class="work-position w-3/5 h-full border rounded-3xl">
+
+                    </div>
+                    <div class="sample w-2/5 h-full border ml-8 rounded-3xl">
+
+                    </div>
+                </div>
+                <div class="mid-containers w-100 h-2/6 flex pb-8">
+                    <div class="work-position w-2/6 h-full border rounded-3xl">
+
+                    </div>
+                    <div class="sample w-4/6 h-full border ml-8 rounded-3xl">
+
+                    </div>
+
+                </div>
+                <div class="bottom-containers w-100 h-1/6 flex">
+                    <div class="work-position w-5/6 h-full border rounded-3xl">
+
+                    </div>
+                    <div class="sample w-1/6 h-full border ml-8 rounded-3xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
