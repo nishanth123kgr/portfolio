@@ -37,24 +37,24 @@
 
 <body class="w-screen h-screen flex items-center flex-col relative py-10 px-16 font-unbounded">
     <nav class="fixed w-16 left-0 top-1/2 transform -translate-y-1/4">
-            <div class="flex flex-col justify-between flex-col-reverse">
-                <div class="flex items-center text-sideways mt-16">
-                    About
-                </div>
-                <div class="flex items-center text-sideways mt-16">
-                    Projects
-                </div>
-                <div class="flex items-center text-sideways mt-16">
-                    Skills
-                </div>
-                <div class="flex items-center text-sideways">
-                    Connect
-                </div>
-                
+        <div class="flex flex-col justify-between flex-col-reverse">
+            <div class="flex items-center text-sideways mt-16">
+                About
             </div>
-            
-                
-            
+            <div class="flex items-center text-sideways mt-16">
+                Projects
+            </div>
+            <div class="flex items-center text-sideways mt-16">
+                Skills
+            </div>
+            <div class="flex items-center text-sideways">
+                Connect
+            </div>
+
+        </div>
+
+
+
         </div>
 
     </nav>
@@ -80,38 +80,55 @@
                 </div>
 
             </div>
-            <div class="w-full bg-primary rounded-3xl rounded-se-none h-[calc(100%-60px)] relative flex flex-col justify-between overflow-hidden">
-                <div class="absolute w-[600px] h-[600px] rounded-full border-white border-[2rem] shadow-lg opacity-10 right-0 top-0 -mt-32 -mr-36"></div>
-                <div class="absolute w-[550px] h-[550px] rounded-full border-white border-[2rem] shadow-lg opacity-10 left-0 bottom-0 -mb-32 -ml-20 z-1"></div>
-                <div class="absolute profile-holder h-[300px] w-[300px] rounded-full overflow-hidden flex justify-center items-center right-0">
-                    <div class="absolute w-[200px] h-[200px] bg-secondary rounded-full shadow-lg"></div>
-                    <div class="absolute w-[240px] h-[240px] rounded-full border-white border-8 shadow-lg"></div>
-                    <img src="assets/images/profile.png" alt="" class="profile h-[350px] mt-14" >
+            <div
+                class="w-full bg-primary rounded-3xl rounded-se-none h-[calc(100%-60px)] relative flex flex-col justify-between overflow-hidden">
+                <div
+                    class="absolute w-[600px] h-[600px] rounded-full border-white border-[2rem] shadow-lg opacity-50 right-0 top-0 -mt-32 -mr-36">
+                </div>
+                <div
+                    class="absolute w-[400px] h-[400px] rounded-full border-white border-[2rem] shadow-lg opacity-10 left-0 bottom-0 -mb-36 -ml-32 z-1">
+                </div>
+                <div
+                    class="absolute profile-holder h-[300px] w-[300px] rounded-full overflow-hidden flex justify-center items-center right-3 top-4">
+                    <div class="absolute w-[200px] h-[200px] bg-white opacity-30 rounded-full shadow-lg"></div>
+                    <div class="absolute w-[260px] h-[260px] rounded-full border-white border-[1rem] shadow-lg"></div>
+                    <img src="assets/images/profile.png" alt="" class="profile h-[350px] mt-14">
                 </div>
                 <div></div>
-                <div class="profile-info text-white p-8">
-                    <div class="text-lg">
+                <div class="profile-info text-white p-8 relative z-10">
+                    <div class="text-lg -mb-2">
                         Im,
                     </div>
-                    <div class="font-bold text-[4rem]">
+                    <div class="font-bold text-[4rem] drop-shadow-xl -ml-1 -mb-1">
                         Nishanth
                     </div>
-                    <div class="font-bold text-xl">
+                    <div class="font-bold text-xl drop-shadow-xl">
                         Full Stack Developer
                     </div>
-                    <div class="mail font-light text-sm mt-2 border-b border-dashed cursor-pointer w-max">nishanth@bluu.in &nbsp;&nbsp;<i class="fa-light fa-envelope"></i></div>
-                    <div class="social mt-4 flex flex-wrap fa-xl">
-                        <div class="github w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
-                            <i class="fa-brands fa-github"></i>
+                    <div class="mail font-light text-sm mt-2 border-b border-dashed cursor-pointer w-max">
+                        nishanth@bluu.in &nbsp;&nbsp;<i class="fa-light fa-envelope"></i></div>
+                    <div class="social mt-4 flex flex-wrap justify-between fa-xl">
+                        <div class="left-ico flex flex-wrap">
+                            <div
+                                class="github w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div
+                                class="linkedin w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div
+                                class="twitter w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
                         </div>
-                        <div class="linkedin w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                        <div class="twitter w-[50px] h-[50px] border rounded-2xl mr-4 flex items-center justify-center cursor-pointer">
-                            <i class="fa-brands fa-instagram"></i>
+                        <div class="right-ico">
+                            <div class="circle w-[50px] h-[50px] bg-white rounded-full cursor-pointer flex items-center justify-center text-primary shadow-lg">
+                                <i class="fa-regular fa-arrow-right-to-arc fa-sm"></i>
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
