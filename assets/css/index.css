@@ -1,9 +1,30 @@
 :root {
-    --primary: #5468ff;
+    /* --primary: #5468ff;
     --secondary: #378ce7;
     --tertiary: #D3D9FF;
     --dark_primary: #3F57FF;
-    --primary_light: #5468ff1a
+    --primary_light: #5468ff1a; */
+    --primary: #5468ff;
+    /* Base Color */
+    --light: #7884ff;
+    /* Lighter Tint */
+    --lighter: #9ca0ff;
+    /* Light Tint */
+
+    --lightest: #c0bcff;
+    /* Pale Tint */
+    --soft: #e4d8ff;
+    /* Soft Tint */
+    --dark: #4458e5;
+    /* Darker Shade */
+    --darker: #3749cc;
+    /* Deep Shade */
+    --darkest: #2b3ab2;
+    /* Dark Shade */
+    --muted: #202d99;
+    /* Muted Shade */
+    --deep: #161f7f;
+    /* Deep Muted Shade */
 }
 
 
@@ -49,25 +70,25 @@
 }
 
 .svg-bg {
-    --c1: #5468ff;
+    --c1: var(--primary);
     /* Base Color */
-    --c2: #7884ff;
+    --c2: var(--light);
     /* Lighter Tint */
-    --c3: #9ca0ff;
+    --c3: var(--lighter);
     /* Light Tint */
-    --c4: #c0bcff;
+    --c4: var(--lightest);
     /* Pale Tint */
-    --c5: #e4d8ff;
+    --c5: var(--soft);
     /* Soft Tint */
-    --c6: #4458e5;
+    --c6: var(--dark);
     /* Darker Shade */
-    --c7: #3749cc;
+    --c7:  var(--darker);
     /* Deep Shade */
-    --c8: #2b3ab2;
+    --c8: var(--darkest);
     /* Dark Shade */
-    --c9: #202d99;
+    --c9: var(--muted);
     /* Muted Shade */
-    --c10: #161f7f;
+    --c10: var(--deep);
     /* Deep Muted Shade */
 
 }
@@ -75,6 +96,7 @@
 .svg-bg .st5 {
     fill: #fff
 }
+
 .svg-bg .st0 {
     fill: #0a9396;
     fill: var(--c1)
@@ -124,3 +146,14 @@
     fill: #bb3e04;
     fill: var(--c10, var(--c8, var(--c6, var(--c4, var(--c2, var(--c1))))))
 }
+
+/* Gradient */
+.top-right-box::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0) 30%, var(--deep) 100%);
+    z-index: 1;
+}
+
