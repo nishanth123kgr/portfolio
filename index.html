@@ -505,29 +505,34 @@
                     </div>
 
                 </div>
-                <div class="bottom-containers w-100 h-1/6 flex font-light">
+                <div class="bottom-containers w-100 h-1/6 flex drop-shadow-lg">
                     <div
-                        class="work-position w-1/4 h-full border rounded-3xl bg-darker flex items-center justify-center text-white text-md relative">
-                            Skills
-                        <!-- <div class="absolute w-[10px] h-[10px] right-4 top-4 border-t-4 border-r-4 border-white"></div> -->
+                        class="work-position w-1/4 h-full rounded-s-3xl bg-darker shadow-lg cursor-pointer flex items-center justify-center text-white text-md relative after:w-1/2 after:h-full after:bg-darker after:absolute after:-right-[calc(50%)]"
+                        onclick="window.location.href='#skills'">
+
+                        <div class="after:w-[10px] after:h-[10px] flex after:border-r-2 after:border-t-2 after:border-white">Skills</div>
+
                     </div>
                     <div
-                        class="work-position w-1/4 none h-full border ml-8 rounded-3xl bg-darker flex items-center justify-center text-white text-md">
-                        Projects
+                        class="work-position w-1/4 none h-full rounded-s-3xl bg-dark shadow-lg cursor-pointer flex items-center justify-center text-white text-md relative z-10 after:w-1/2 after:h-full after:bg-dark after:absolute after:-right-[calc(50%)]">
+                        <div class="after:w-[10px] after:h-[10px] flex after:border-r-2 after:border-t-2 after:border-white">Projects</div>
+
                     </div>
                     <div
-                        class="work-position w-1/4 none h-full border ml-8 rounded-3xl bg-darker flex items-center justify-center text-white text-md">
-                        Career
+                        class="work-position w-1/4 none h-full rounded-s-3xl bg-primary shadow-lg cursor-pointer flex items-center justify-center text-white text-md relative z-20 after:w-1/2 after:h-full after:bg-primary after:absolute after:-right-[calc(50%)]">
+                        <div class="after:w-[10px] after:h-[10px] flex after:border-r-2 after:border-t-2 after:border-white">Work</div>
+
                     </div>
                     <div
-                        class="work-position w-1/4 none h-full border ml-8 rounded-3xl bg-darker flex items-center justify-center text-white text-md">
-                        About
+                        class="work-position w-1/4 none h-full rounded-3xl bg-light shadow-lg cursor-pointer flex items-center justify-center text-white text-md z-30">
+                        <div class="after:w-[10px] after:h-[10px] flex after:border-r-2 after:border-t-2 after:border-white">About</div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="flex h-[calc(100vh)] w-screen py-10 px-16 relative">
+    <div class="flex h-screen w-screen py-10 px-16 relative" id="skills">
         <div class="w-2/5 h-full relative drop-shadow-xl">
             <div class="wrapper absolute  w-full h-full overflow-hidden z-10">
                 <div
@@ -855,7 +860,7 @@
                             <span class="rotate-180 text-primary">HOT <i class="fa-solid fa-fire rotate-90"></i></span>
                         </div> -->
 
-                        <div id="default-carousel" class="relative w-full h-full text-white" data-carousel="slide">
+                        <div id="default-carousel-1" class="relative w-full h-full text-white" data-carousel="slide">
                             <!-- Carousel wrapper -->
                             <div class="relative h-full w-full overflow-hidden rounded-lg">
                                 <!-- Item 1 -->
